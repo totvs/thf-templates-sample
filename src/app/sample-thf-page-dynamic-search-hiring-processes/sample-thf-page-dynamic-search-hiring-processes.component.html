@@ -1,0 +1,19 @@
+<thf-page-dynamic-search
+  t-title="Dynamic search"
+  [t-actions]="actions"
+  [t-breadcrumb]="breadcrumb"
+  [t-filters]="filters"
+  (t-change-disclaimers)="onChangeDisclaimers($event)"
+  (t-quick-search)="onQuickSearch($event)"
+  (t-advanced-search)="onAdvancedSearch($event)">
+
+  <thf-table
+    t-checkbox
+    t-single-select
+    t-sort="true"
+    t-striped="true"
+    [t-columns]="hiringProcessesColumns"
+    [t-items]="hiringProcesses">
+  </thf-table>
+
+</thf-page-dynamic-search>
